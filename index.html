@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Jogos para Celular de PS4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00aaff;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .jogo {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .jogo:hover {
+      transform: scale(1.03);
+    }
+
+    .jogo img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .jogo .info {
+      padding: 15px;
+    }
+
+    .jogo h3 {
+      margin: 0 0 10px;
+      color: #00aaff;
+    }
+
+    .jogo p {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .preco {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+
+    .botao-comprar {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .pagamento {
+      display: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .paypal-btn {
+      background-color: #ffc439;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #aaa;
+    }
+  
+    .aviso-bolinha {
+      display: inline-block;
+      background-color: #2e2e2e;
+      color: #fff;
+      font-size: 10px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-bottom: 5px;
+    }
+    </style>
+    
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo de Jogos para Celular de PS4</h1>
+  </header>
+
+  <section class="catalogo">
+    <div class="jogo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Spider-Man_PS4_cover.jpg" alt="Homem Aranha">
+      <div class="info">
+        <h3>Homem-Aranha</h3>
+        <p>Explore Nova York com Peter Parker.</p>
+        <div class="preco"><span class="aviso-bolinha">O jogo será enviado por link no e-mail após o pagamento.</span><br>$19.99</div>
+        <button class="botao-comprar" onclick="mostrarPagamento(this)">Comprar</button>
+        <div class="pagamento">
+          <p>Forma de pagamento:</p>
+          <a href="https://www.paypal.com/ncp/payment/DRXVREJ73VFM8" target="_blank">
+            <button class="paypal-btn">Pagar com PayPal</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jogo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/00/The_Last_of_Us_Part_II_cover_art.jpg" alt="The Last of Us">
+      <div class="info">
+        <h3>The Last of Us</h3>
+        <p>Sobreviva com Joel e Ellie.</p>
+        <div class="preco"><span class="aviso-bolinha">O jogo será enviado por link no e-mail após o pagamento.</span><br>$24.50</div>
+        <button class="botao-comprar" onclick="mostrarPagamento(this)">Comprar</button>
+        <div class="pagamento">
+          <p>Forma de pagamento:</p>
+          <a href="https://www.paypal.com/ncp/payment/EGVEPXJFLZABQ" target="_blank">
+            <button class="paypal-btn">Pagar com PayPal</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jogo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA 5">
+      <div class="info">
+        <h3>GTA 5</h3>
+        <p>Liberdade total em Los Santos.</p>
+        <div class="preco"><span class="aviso-bolinha">O jogo será enviado por link no e-mail após o pagamento.</span><br>$29.90</div>
+        <button class="botao-comprar" onclick="mostrarPagamento(this)">Comprar</button>
+        <div class="pagamento">
+          <p>Forma de pagamento:</p>
+          <a href="https://www.paypal.com/ncp/payment/5EAJTG3BEX7RU" target="_blank">
+            <button class="paypal-btn">Pagar com PayPal</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jogo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2">
+      <div class="info">
+        <h3>Red Dead Redemption 2</h3>
+        <p>Explore o Velho Oeste.</p>
+        <div class="preco"><span class="aviso-bolinha">O jogo será enviado por link no e-mail após o pagamento.</span><br>$27.30</div>
+        <button class="botao-comprar" onclick="mostrarPagamento(this)">Comprar</button>
+        <div class="pagamento">
+          <p>Forma de pagamento:</p>
+          <a href="https://www.paypal.com/ncp/payment/5XVSJ7WN7VYTG" target="_blank">
+            <button class="paypal-btn">Pagar com PayPal</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jogo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Spider-Man_Miles_Morales.jpeg" alt="Miles Morales">
+      <div class="info">
+        <h3>Miles Morales</h3>
+        <p>Nova geração do Aranha em ação.</p>
+        <div class="preco"><span class="aviso-bolinha">O jogo será enviado por link no e-mail após o pagamento.</span><br>$21.75</div>
+        <button class="botao-comprar" onclick="mostrarPagamento(this)">Comprar</button>
+        <div class="pagamento">
+          <p>Forma de pagamento:</p>
+          <a href="https://www.paypal.com/ncp/payment/JJ97EFD6N2CBQ" target="_blank">
+            <button class="paypal-btn">Pagar com PayPal</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jogo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Dragon_Ball_Super_Super_Hero_poster.png" alt="Dragon Ball Z">
+      <div class="info">
+        <h3>Dragon Ball Z Kakarot</h3>
+        <p>Reviva as batalhas lendárias.</p>
+        <div class="preco"><span class="aviso-bolinha">O jogo será enviado por link no e-mail após o pagamento.</span><br>$17.99</div>
+        <button class="botao-comprar" onclick="mostrarPagamento(this)">Comprar</button>
+        <div class="pagamento">
+          <p>Forma de pagamento:</p>
+          <a href="https://www.paypal.com/ncp/payment/K4WZEQ4U8WFH2" target="_blank">
+            <button class="paypal-btn">Pagar com PayPal</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Catálogo de Jogos para Celular de PS4. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarPagamento(botao) {
+      const divPagamento = botao.nextElementSibling;
+      divPagamento.style.display = "block";
+    }
+  </script>
+</body>
+</html>
